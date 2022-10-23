@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DoIUse": {
+      "commandName": "Project",
+      "commandLineArgs": "System.IO.FileInfo I:\\Programs\\CSharp\\COVID19Stats\\COVID19Stats\\bin\\Debug\\netstandard2.1 -o html"
+    }
+  }
+}

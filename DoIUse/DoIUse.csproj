@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>doiuse</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\berse\.nuget\packages\icsharpcode.decompiler\8.0.0.7106-preview2\contentFiles\any\netstandard2.0\Humanizer\LICENSE" />
+    <Content Remove="C:\Users\berse\.nuget\packages\icsharpcode.decompiler\8.0.0.7106-preview2\contentFiles\any\netstandard2.0\Pattern Matching.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ICSharpCode.Decompiler" Version="8.0.0.7106-preview2" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Spectre.Console.Cli" Version="0.45.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="report_template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
